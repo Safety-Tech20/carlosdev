@@ -1,73 +1,391 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carlos Dev | Link na Bio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPrevent - Consultoria em Segurança do Trabalho</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--topo-->
+
+    <body>
+  <div id="topo"></div>
+
+
+
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #1f1f1f;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    header {
-      background-color: #002b5b;
-      color: #fff;
-      padding: 2rem 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-    .tagline {
-      font-size: 1rem;
-      margin-top: 0.5rem;
-      color: #ffcc00;
-    }
-    .links {
-      margin: 2rem auto;
-      max-width: 400px;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .links a {
-      background-color: #ffcc00;
-      color: #002b5b;
-      text-decoration: none;
-      padding: 1rem;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .links a:hover {
-      background-color: #ffd633;
-    }
-    footer {
-      margin-top: 3rem;
-      font-size: 0.8rem;
-      color: #888;
-      padding-bottom: 2rem;
+      font-family: 'Poppins', sans-serif;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Carlos Dev</h1>
-    <p class="tagline">Sites modernos para negócios que querem crescer</p>
-  </header>
+    <!-- Menu -->
+     <header class="menu">
+        <!--topo-->
+       <header class="logo-header">
+  <a href="#inicio">
+  <img src="imagens/Logo.png" alt="Logo de Inicio">
+  </a>
+</header>
 
-  <section class="links">
-    <a href="https://wa.me/5511910648772" target="_blank">📱 WhatsApp</a>
-    <a href="https://www.instagram.com/jcarlosb97/" target="_blank">📸 Instagram</a>
+
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#cipa">CIPA</a></li>
+        <li><a href="#destaques">Destaques</a></li>
+        <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+     </header>
+
+         <!-- Banner Hero -->
+<section class="banner-hero">
+  <div class="banner-conteudo">
+    <h1>Protegendo Vidas e Negócios</h1>
+    <p>Consultoria especializada em Segurança do Trabalho com atuação em todo o Brasil</p>
+    <a href="#contato" class="botao-cta">Solicite um orçamento</a>
+  </div>
+</section>
+
+     <!-- Carrossel -->
+       <section class="carrossel">
+    <div class="slides">
+      <img src="consultoria1.jpg" alt="Consultoria em ação 1">
+      <img src="consultoria2.jpg" alt="Consultoria em ação 2">
+      <img src="consultoria3.jpg" alt="Consultoria em ação 3">
+    </div>
+  </section>
+ <!--Destaque animado-->
+<section id="destaques" class="cards-animados">
+  <h2>Informações Essenciais</h2>
+  <div class="card-container">
+    <div class="card">
+      <i class="fas fa-fire-extinguisher"></i>
+      <h3>Brigada</h3>
+      <p>Equipe treinada para atuar em emergências como incêndios, primeiros socorros e evacuação.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-shield-alt"></i>
+      <h3>NR-06 - EPIs</h3>
+      <p>Norma que obriga o uso de Equipamentos de Proteção Individual para preservar a saúde do trabalhador.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-cogs"></i>
+      <h3>NR-12</h3>
+      <p>Garante a segurança em máquinas e equipamentos, com foco na prevenção de acidentes graves.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-file-alt"></i>
+      <h3>Documentação SST</h3>
+      <p>Inclui PPRA, PCMSO, LTCAT e demais documentos obrigatórios para estar em conformidade com a lei.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-user-alt-slash"></i>
+      <h3>NR-35</h3>
+      <p>Estabelece regras para o trabalho em altura, visando proteger os profissionais envolvidos.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-truck-loading"></i>
+      <h3>Empilhadeira</h3>
+      <p>Treinamento e certificação para operação segura e eficiente de empilhadeiras no ambiente de trabalho.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-dolly"></i>
+      <h3>Transpaleteira</h3>
+      <p>Capacitação no uso correto e seguro da transpaleteira elétrica para movimentação de cargas.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+   <!-- Sobre -->
+  <section id="sobre" class="sobre">
+  <div class="container-sobre">
+    <div class="texto-sobre">
+      <h2>Quem Somos</h2>
+      <p>A <strong>TPrevent</strong> é uma consultoria especializada em <strong>Segurança do Trabalho</strong>, com foco em soluções práticas e eficientes para empresas que valorizam a vida e a conformidade legal.</p>
+      <p>Atuamos em todo o Brasil oferecendo treinamentos, documentos técnicos, apoio em CIPA e muito mais. Nosso objetivo é garantir ambientes mais seguros, produtivos e livres de riscos.</p>
+      <p>Trabalhamos com agilidade, responsabilidade e sempre com foco na prevenção. Com a TPrevent, sua empresa está segura hoje e preparada para o amanhã.</p>
+    </div>
+    <div class="imagem-sobre">
+      <img src="imagens/quem-somos.jpg" alt="Equipe TPrevent">
+    </div>
+  </div>
+</section>
+
+
+  <!-- CIPA -->
+  <section id="cipa" class="secao-cipa">
+  <div class="container-cipa">
+    <div class="texto-cipa">
+      <h2><i class="fas fa-users-cog"></i> CIPA - Segurança de Dentro pra Fora</h2>
+      <p>A <strong>CIPA</strong> é obrigatória em empresas com certo número de funcionários e tem como missão <strong>prevenir acidentes e doenças do trabalho</strong>, através da participação ativa de colaboradores.</p>
+      <p>Com a <strong>TPrevent</strong>, sua empresa recebe todo o suporte para <strong>implantação, manutenção e regularização da CIPA</strong> — desde as eleições e atas até treinamentos e documentações exigidas por lei.</p>
+      <p>Organize, forme e fortaleça sua CIPA com quem entende do assunto.</p>
+    </div>
+    <div class="imagem-cipa">
+      <img src="imagens/CIPA.png" alt="Treinamento de CIPA">
+    </div>
+  </div>
+</section>
+
+<!--Clientes atendidos-->
+
+<section id="clientes" class="clientes">
+  <img src="https://via.placeholder.com/150x60?text=Logo+Cliente" alt="Cliente">
+
+  <h2>Clientes Atendidos</h2>
+  <p>Algumas das empresas que confiaram na TPrevent para garantir segurança e conformidade:</p>
+  <div class="logos-clientes">
+    <img src="imagens/cliente1.png" alt="Cliente 1">
+    <img src="imagens/cliente2.png" alt="Cliente 2">
+    <img src="imagens/cliente3.png" alt="Cliente 3">
+    <img src="imagens/cliente4.png" alt="Cliente 4">
+  </div>
+</section>
+
+   <!-- Destaques estilo Instagram -->
+  <section id="destaques" class="destaques">
+  <h2>Destaques</h2>
+  <div class="destaque-circulos">
+    <div class="destaque-item">
+      <img src="imagens/brigada.jpg" alt="Brigada">
+      <p>Brigada</p>
+    </div>
+    <div class="destaque-item">
+      <img src="imagens/nr06.jpg" alt="NR06 - EPIs">
+      <p>NR06 - EPIs</p>
+    </div>
+    <div class="destaque-item">
+      <img src="imagens/nr12.jpg" alt="NR12">
+      <p>NR12</p>
+    </div>
+    <div class="destaque-item">
+      <img src="imagens/sst.jpg" alt="Documentação SST">
+      <p>Documentação SST</p>
+    </div>
+    <div class="destaque-item">
+      <img src="imagens/nr35.jpg" alt="NR35">
+      <p>NR35</p>
+    </div>
+    <div class="destaque-item">
+      <img src="imagens/empilhadeira.jpg" alt="Empilhadeira">
+      <p>Empilhadeira</p>
+    </div>
+    <div class="destaque-item">
+      <img src="imagens/transpaleteira.jpg" alt="Transpaleteira">
+      <p>Transpaleteira</p>
+    </div>
+  </div>
+</section>
+
+<!--hero-->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Segurança do Trabalho é com a TPrevent</h1>
+    <p>Consultoria especializada em CIPA, NR’s, EPIs, treinamentos e muito mais.</p>
+    <a href="#contato" class="botao-cta">Solicitar Orçamento</a>
+  </div>
+</section>
+
+
+  <!-- Redes Sociais -->
+  <a href="https://www.instagram.com/tprevent_consultoriasst/" target="_blank" style="text-decoration: none;">
+  <div class="botao-instagram" onclick="mostrarMensagemInstagram()">
+    <i class="fab fa-instagram"></i>
+    <span class="texto-instagram">Seguir @tprevent.seg</span>
+  </div>
+</a>
+
+<!--Cursos-->
+<section id="cursos-upgrades" class="cursos-upgrades">
+  <h2><i class="fas fa-chalkboard-teacher"></i> Cursos & Treinamentos</h2>
+  <div class="grade-cursos">
+    <div class="curso-card">
+      <h3>Curso de Operador de Empilhadeira</h3>
+      <li>Aprenda a operar empilhdeiras com segurança.</li>
+      <li>Domine técnicas de movimentação e armazenamento.</li>
+      <li>Garanta mais eficiência e produtividade no trabalho</li>
+      <li>Obtenha certificado reconhecido pelo mercado.</li>
+       <a href="https://wa.me/SEUNUMERO" target="_blank" class="botao-saiba-mais">Saiba mais</a>
+       <a href="video-cipa.mp4" class="botao-saiba-mais" target="_blank">
+  <i class="fas fa-play"></i> Assistir Treinamento
+</a>
+<div class="selo-certificado">
+  <i class="fas fa-certificate"></i> Certificado Reconhecido
+</div>
+
+
+
+    </div>
+    <div class="curso-card">
+      <h3>NR-35 - Trabalho em Altura</h3>
+      <p>Curso essencial para profissionais que atuam acima de 2 metros, com foco em prevenção.</p>
+       <a href="https://wa.me/SEUNUMERO" target="_blank" class="botao-saiba-mais">Saiba mais</a>
+       <a href="video-cipa.mp4" class="botao-saiba-mais" target="_blank">
+  <i class="fas fa-play"></i> Assistir Treinamento
+</a>
+<div class="selo-certificado">
+  <i class="fas fa-certificate"></i> Certificado Reconhecido
+</div>
+
+
+    </div>
+    <div class="curso-card">
+      <h3>NR-12 - Segurança em Máquinas</h3>
+      <p>Capacitação sobre segurança na operação e manutenção de equipamentos industriais.</p>
+       <a href="https://wa.me/SEUNUMERO" target="_blank" class="botao-saiba-mais">Saiba mais</a>
+       <a href="video-cipa.mp4" class="botao-saiba-mais" target="_blank">
+  <i class="fas fa-play"></i> Assistir Treinamento
+</a>
+<div class="selo-certificado">
+  <i class="fas fa-certificate"></i> Certificado Reconhecido
+</div>
+
+
+    </div>
+    <div class="curso-card">
+      <h3>Treinamento Brigada de emergência</h3>
+      <p>Capacite seus colaboradores para fazer a diferença em situações de emergência.</p>
+       <a href="https://wa.me/SEUNUMERO" target="_blank" class="botao-saiba-mais">Saiba mais</a>
+       <a href="video-cipa.mp4" class="botao-saiba-mais" target="_blank">
+  <i class="fas fa-play"></i> Assistir Treinamento
+</a>
+<div class="selo-certificado">
+  <i class="fas fa-certificate"></i> Certificado Reconhecido
+</div>
+
+
+    </div>
+    <div class="curso-card">
+      <h3>Treinamentos</h3>
+      <p>Em atendimento a Norma Regulamentadora 05, é fundamental que em sua empresa seja formado colaboradores prevencionistas, para que assim seja possível garantir um ambiente de trabalho seguro e saudável.</p>
+      <p>O que será abordado?</p>
+      <li>Normas e regulamentos de segurança</li>
+      <li>Riscos ambientais</li>
+      <li> Identificação dos riscos e perigos no ambiente de trabalho</li>
+      <li>Atribuições dos membros da CIPA</li>
+      <li>Entre outros assuntos</li>
+       <a href="https://wa.me/SEUNUMERO" target="_blank" class="botao-saiba-mais">Saiba mais</a>
+       <a href="video-cipa.mp4" class="botao-saiba-mais" target="_blank">
+  <i class="fas fa-play"></i> Assistir Treinamento
+</a>
+<div class="selo-certificado">
+  <i class="fas fa-certificate"></i> Certificado Reconhecido
+</div>
+
+
+    </div>
+  </div>
+
+</section>
+
+
+  <!-- Vídeos de Treinamento -->
+  <section id="videos" class="videos">
+    <h2>Vídeos de Treinamento</h2>
+    <div class="video-grid">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+    </div>
   </section>
 
-  <footer>
-    &copy; 2025 Carlos Dev. Todos os direitos reservados.
+   <!-- Formulário de Contato -->
+  <section id="contato">
+    <form action="contato.php" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+    <!-- Botão WhatsApp -->
+    <a href="https://wa.me/5511912345678" class="whatsapp" target="_blank">
+      Fale Conosco no WhatsApp
+    </a>
+  </section>
+  <a href="https://wa.me/5511912345678" class="whatsapp-float" target="_blank">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+</a>
+
+
+<!--Contadores-->
+
+<div class="contadores">
+  <div class="contador-box">
+    <h3><span class="contador" data-numero="120">1</span>+</h3>
+    <p>Empresas Atendidas</p>
+  </div>
+  <div class="contador-box">
+    <h3><span class="contador" data-numero="540">0</span>+</h3>
+    <p>Profissionais Treinados</p>
+  </div>
+</div>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>&copy; 2025 TPrevent - Felipe Batista. Todos os direitos reservados.</p>
   </footer>
+
+ <!--Contadores-->
+<script>
+  const contadores = document.querySelectorAll('.contador');
+
+  const animarContadores = () => {
+    contadores.forEach(contador => {
+      const alvo = +contador.getAttribute('data-numero');
+      let contagem = 0;
+
+      const tempo = setInterval(() => {
+        contagem += Math.ceil(alvo / 50);
+        if (contagem >= alvo) {
+          contador.textContent = alvo;
+          clearInterval(tempo);
+        } else {
+          contador.textContent = contagem;
+        }
+      }, 40);
+    });
+  };
+
+  // Aciona quando a seção estiver visível
+  let iniciado = false;
+  window.addEventListener('scroll', () => {
+    const secao = document.querySelector('.contadores');
+    const topo = secao.getBoundingClientRect().top;
+
+    if (topo < window.innerHeight && !iniciado) {
+      animarContadores();
+      iniciado = true;
+    }
+  });
+</script>
+
+ <!--Botao do Insta-->
+  <script>
+  function mostrarMensagemInstagram() {
+    const texto = document.querySelector('.texto-instagram');
+    texto.style.opacity = '1';
+    texto.style.transform = 'translateY(0)';
+    
+    setTimeout(() => {
+      texto.style.opacity = '0';
+      texto.style.transform = 'translateY(10px)';
+    }, 3000); // Dura 3 segundos
+  }
+</script>
+
+    
 </body>
 </html>
